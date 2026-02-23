@@ -1,0 +1,14 @@
+<h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p>
+<h1>Result</h1>
+
+<p><strong>Grid:</strong> <%= @letters.join(" ") %></p>
+<p><strong>Your word:</strong> <%= @word %></p>
+
+<p><%= @message %></p>
+
+<% if @score %>
+  <p><strong>Score:</strong> <%= @score %></p>
+<% end %>
+
+<%= link_to "Play again", new_path %>
